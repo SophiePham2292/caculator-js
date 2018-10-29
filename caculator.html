@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="caculator">
+        <div class='caculator-action'>
+            <div onclick="handleOutput(this)" class='value-output'>=</div>
+            <h6 class='value-expresion'></h6>
+            <div onclick="handleInput(this)" class='value-input'>1</div>
+            <div onclick="handleInput(this)" class='value-input'>2</div>
+            <div onclick="handleInput(this)" class='value-input'>3</div>
+            <div onclick="handleInput(this)" class='value-change'>+</div>
+            <div onclick="handleInput(this)" class='value-input'>4</div>
+            <div onclick="handleInput(this)" class='value-input'>5</div>
+            <div onclick="handleInput(this)" class='value-input'>6</div>
+            <div onclick="handleInput(this)" class='value-change'>-</div>
+            <div onclick="handleInput(this)" class='value-input'>7</div>
+            <div onclick="handleInput(this)" class='value-input'>8</div>
+            <div onclick="handleInput(this)" class='value-input'>9</div>
+            <div onclick="handleInput(this)" class='value-change'>*</div>
+            <div onclick="handleInput(this)" class='value-input'>0</div>
+            <div onclick="handleInput(this)" class='value-input'>.</div>
+            <div onclick="cancelInput()">C</div>
+            <div onclick="handleInput(this)" class='value-change'>/</div>
+        </div>
+        <div class="caculator-log">
+            <h4>Log</h4>
+            <ul id='log-output'>
+            </ul>
+        </div>
+    </div>
+    <script src="caculator.js"></script>
+</body>
+</html>
